@@ -1,0 +1,60 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/braincotech
+notes: >-
+  BrainCo distributes device/BCI client SDKs rather than a public REST API.
+  Confirmed first-party libraries below. Registry-published packages verified via
+  the PyPI and npm JSON APIs; source-only SDKs are published in the braincotech /
+  BrainCoTech GitHub organization and installed from source.
+packages:
+- language: python
+  registry: pypi
+  name: bc-revo3-sdk
+  version: 1.5.1
+  url: https://pypi.org/project/bc-revo3-sdk/
+  install: pip install bc-revo3-sdk
+  source: https://github.com/BrainCoTech/bc-revo3-sdk
+  summary: BrainCo Revo3 21-DoF dexterous hand SDK
+  official: true
+- language: javascript
+  registry: npm
+  name: crimson-sdk
+  version: 1.4.9
+  url: https://www.npmjs.com/package/crimson-sdk
+  install: npm install crimson-sdk
+  summary: Crimson SDK for Node.js - BrainCo Crimson portable EEG devices
+  author: se@brainco.tech
+  official: true
+- language: python
+  registry: github
+  name: brainco-hand-sdk
+  url: https://github.com/braincotech/brainco-hand-sdk
+  install: git clone https://github.com/braincotech/brainco-hand-sdk && pip3 install -r python/requirements.txt
+  summary: >-
+    BrainCo Revo1/Revo2 dexterous hand SDK (Python + C/C++); protocols RS-485,
+    CAN, CAN FD, EtherCAT, Protobuf
+  license: MIT
+  official: true
+- language: cpp
+  registry: github
+  name: brainco_hand_ros2
+  url: https://github.com/braincotech/brainco_hand_ros2
+  install: git clone https://github.com/braincotech/brainco_hand_ros2
+  summary: ROS 2 integration for BrainCo dexterous hands
+  license: Apache-2.0
+  official: true
+- language: python
+  registry: github
+  name: brainco-revo3-sdk
+  url: https://github.com/braincotech/brainco-revo3-sdk
+  install: pip install bc-revo3-sdk
+  summary: Revo3 Hand SDK examples (CLI + PySide GUI + firmware update utilities)
+  official: true
+- language: cpp
+  registry: github
+  name: crimson-sdk-prebuild
+  url: https://github.com/braincotech/crimson-sdk-prebuild
+  install: git clone https://github.com/braincotech/crimson-sdk-prebuild
+  summary: Prebuilt native libraries for the Crimson EEG SDK
+  license: MIT
+  official: true

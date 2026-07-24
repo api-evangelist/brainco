@@ -1,9 +1,33 @@
 aid: brainco
 name: BrainCo
-description: 'BrainCo is a company surfaced as a portfolio company of idg-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  BrainCo is a Harvard-innovation-lab-founded neurotechnology company building
+  non-invasive brain-computer interface (BCI) hardware and the developer SDKs
+  that surround it. Its consumer and research line centers on wearable EEG
+  headbands - Focus, Focus1 and FocusCalm - that measure attention and stress
+  from brainwave signals for education, wellness and biofeedback, alongside the
+  BrainRobotics neuroprosthetic hand and the Revo (Revo1/Revo2/Revo3) family of
+  dexterous robotic hands for robotics and embodied-AI developers. BrainCo ships
+  first-party SDKs rather than a public REST API: the Crimson SDK for its
+  portable EEG devices (Node.js and native/BLE), the Focus SDK for headband
+  brainwave measurement, and the Revo Hand SDKs (Python and C/C++, distributed
+  on PyPI and GitHub) that speak RS-485, CAN 2.0A/CAN FD, EtherCAT and Protobuf,
+  plus ROS 2 drivers and URDF/MJCF/USD simulation assets. The company is backed
+  by IDG Capital and operates in the healthcare, neurotech, robotics and
+  education-technology sectors.
 url: https://raw.githubusercontent.com/api-evangelist/brainco/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/17015661?v=4
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,13 +36,48 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Neurotechnology
+- Brain-Computer Interface
+- EEG
+- Wearables
+- Robotics
+- SDK
+- Education
 apis: []
+common:
+- type: Website
+  url: https://www.brainco.tech/
+- type: DeveloperPortal
+  url: https://developers.brainco.tech/
+- type: Documentation
+  url: https://www.brainco-hz.com/docs/revolimb-hand-dev/
+- type: GitHubOrganization
+  url: https://github.com/braincotech
+- type: Support
+  url: mailto:general@brainco.tech
+- type: PrivacyPolicy
+  url: https://www.brainco.tech/privacy-policy/
+- type: TermsOfService
+  url: https://brainco.tech/terms-of-service/
+- type: Packages
+  url: packages/brainco-packages.yml
+- type: SDKs
+  url: packages/brainco-packages.yml
+- type: LLMsTxt
+  url: llms/brainco-llms.txt
+- type: DomainSecurity
+  url: security/brainco-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
